@@ -1,12 +1,12 @@
 <!-- _coverpage.md -->
 
-# docsify <small>3.5</small>
+# DoveAPI <small>1.x</small>
 
-> 一个神奇的文档网站生成器。
+> 面向 API 开发的 PHP快速开发框架
 
-- 简单、轻便 (压缩后 ~21kB)
-- 无需生成 html 文件
-- 众多主题
+- 轻量、简洁、不同于MVC
+- 支持中文编程、全面向对象操作
+- 路由即路径
 
-[GitHub](https://github.com/docsifyjs/docsify/)
-[Get Started](#docsify)
+[GitHub](https://github.com/xcenweb/DoveAPI)
+[查看文档](#DoveAPI)
