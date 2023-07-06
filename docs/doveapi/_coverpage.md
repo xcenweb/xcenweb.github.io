@@ -9,4 +9,4 @@
 - 路由即路径
 
 [GitHub](https://github.com/xcenweb/DoveAPI)
-[查看文档](#DoveAPI)
+[查看文档](#fr-install)

@@ -10,7 +10,7 @@
 
 面向 API 开发的 **PHP快速开发框架**
 
-[文档]() | [Github](https://github.com/xcenweb/DoveAPI) | [Gitee]()
+[文档](https://xcenweb.github.io/docs/doveapi/) | [Github](https://github.com/xcenweb/DoveAPI) | [Gitee]()
 
 附属项目：
 - [doveapi-core](https://github.com/xcenweb/doveapi-core) 框架核心
