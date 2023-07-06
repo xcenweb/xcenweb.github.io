@@ -1,6 +1,6 @@
 # 日志/Log
 
-!> 此函数今后可能会有修改，请尽量统一格式写法，方便版本迁移 <br> ![不能写死](../功能不能写死.jpg)
+[](../_include/not-hardcode.md ':include')
 
 ```php
 <?php 
