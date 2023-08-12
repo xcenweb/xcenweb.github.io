@@ -4,7 +4,6 @@
 
 ```php
 <?php 
-// 在代码前写
 use dove\Log;
 // 然后使用方法
 Log::method();
