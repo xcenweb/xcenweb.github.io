@@ -12,6 +12,7 @@ Route::method();
 # 模块配置
 
 `./config/AccessControl.php`
+
 ```php
 // 默认执行文件
 'default_file' => 'index.php',
@@ -24,10 +25,6 @@ Route::method();
     // test.xcenadmin.top => app/abc/index.php
     // test.xcenadmin.top/abc => app/abc/abc.php
     'test' => 'abc',
-
-    // xcenadmin.top => app/index.php
-    // www.xcenadmin.top => app/index.php
-    '__INDEX__' => '',
 ],
 ```
 

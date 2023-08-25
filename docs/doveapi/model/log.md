@@ -111,4 +111,4 @@ $file = "example.txt";
 $result = Log::write($text, $path, $file);
 ``` 
 
-此示例将会将文本内容写入指定的文件。
+此示例将会将文本内容插入指定的文件。
