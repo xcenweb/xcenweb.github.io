@@ -1,6 +1,6 @@
 # 日志/Log
 
-[](../_include/not-hardcode.md ':include')
+<!-- [](../_include/not-hardcode.md ':include') -->
 
 ```php
 <?php 
@@ -13,32 +13,28 @@ Log::method();
 
 # 模块配置
 
-`./config/dove.php`
+`./config/log.php`
+
 ```php
-    // 自定义log 相关预设
-    // ['类型，默认unknown','目录，默认unknown','记录log的文件名，默认unknown']
-    'log_preset' => [
-        'eg' => ['Bad','test','test_log'],
-    ],
+    // log开关，关闭后所有log将不会被记录（包括debug_log）, Log::save() 只返回 true
+    'log_switch' => true,
 ```
 
 ---
 
-# static::save
+# static::add
 
-该方法用于保存日志。
+该方法用于添加一条日志。
 
 ```php
-  public static function save($add = [], $path = 'unknown', $logname = 'unknown', $type = 'unknown') 
+  public static function add($add = [], $type = 'NOTE') 
 ```
 
 
 ### 参数
 
 - `$add` (数组)：需要添加到日志中的额外信息，键值对的形式。
-- `$path` (字符串)：日志保存的路径，默认为'unknown'。
-- `$logname` (字符串)：日志文件的名称，默认为'unknown'。
-- `$type` (字符串)：日志类型，默认为'unknown'。 
+- `$type` (字符串)：日志类型，默认为'NOTE'。 
 
 
 ### 返回值
@@ -48,27 +44,30 @@ Log::method();
 
 ### 例子
 
-```php
-Log::save(['user_id' => 123, 'action' => 'login'], 'auth', 'auth_log', 'login');
-```
-
 此示例将会保存一条包含用户ID和登录动作的日志到指定的日志文件。
+
+```php
+Log::add(['user_id' => 123, 'action' => 'login'], 'login');
+// [login][1970-01-01 00:00:00][127.0.0.1]
+// user_id: 123
+// action: login
+```
 
 ---
 
-# static::saveErr
+# static::debug
 
-该方法用于保存错误日志。 
+该方法用于 `dove\Debug` 保存错误日志。 
 
 ```php
-public static function saveErr($errFile = '未知', $errInfo = '未知', $remarks = '无')
+public static function debug($errFile = 'null', $errInfo = 'false', $remarks = 'false')
 ```
 
 ### 参数
 
-- `$errFile` (字符串)：发生错误的文件路径，默认为'未知'。
-- `$errInfo` (字符串)：错误的详细信息，默认为'未知'。
-- `$remarks` (字符串)：错误的备注信息，默认为'无'。 
+- `$errFile` (字符串)：发生错误的文件路径，默认为 'null'。
+- `$errInfo` (字符串)：错误的详细信息，默认为 'false'。
+- `$remarks` (字符串)：错误的备注信息，默认为 'false'。 
 
 ### 返回值 
 
@@ -77,11 +76,11 @@ public static function saveErr($errFile = '未知', $errInfo = '未知', $remark
 
 ### 示例
 
-```php
-Log::saveErr('path/to/file.php', 'Undefined variable: foo', '处理用户输入时发生错误'); 
-```
-
 此示例将会保存一条包含文件路径、错误信息和备注的错误日志到指定的日志文件。
+
+```php
+Log::debug('path/to/file.php', 'Undefined variable: foo', '处理用户输入时发生错误'); 
+```
 
 ---
 
