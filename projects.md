@@ -4,6 +4,10 @@
 
 [文档](https://xcenweb.github.io/docs/doveapi/) | [Github](https://github.com/xcenweb/DoveAPI) | [Gitee]()
 
+[![GitHub stars](https://img.shields.io/github/stars/xcenweb/DoveAPI)](https://github.com/xcenweb/DoveAPI/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/xcenweb/DoveAPI)](https://github.com/xcenweb/DoveAPI/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/xcenweb/DoveAPI)](https://github.com/xcenweb/DoveAPI/issues)
+
 附属项目：
 - [doveapi-core](https://github.com/xcenweb/doveapi-core) 框架核心
 - [doveapi-fme](https://github.com/xcenweb/doveapi-fme) 框架管理器
