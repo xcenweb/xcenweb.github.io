@@ -8,7 +8,7 @@
 
 ## 🔥DoveAPI
 
-面向 API 开发的 **PHP快速开发框架**
+针对 API 开发场景的 **PHP快速开发框架**
 
 [文档](https://xcenweb.github.io/docs/doveapi/) | [Github](https://github.com/xcenweb/DoveAPI) | [Gitee]()
 
