@@ -11,9 +11,3 @@
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/xcenweb/xcenweb.github.io)](https://github.com/xcenweb/xcenweb.github.io/pulls)
 [![GitHub last commit](https://img.shields.io/github/last-commit/xcenweb/xcenweb.github.io)](https://github.com/xcenweb/xcenweb.github.io/commits/master)
 [![GitHub repo size](https://img.shields.io/github/repo-size/xcenweb/xcenweb.github.io)](https://github.com/xcenweb/xcenweb.github.io/archive/master.zip)
-
-# 关于我
-
-网名：一只咕鸽
-年龄：18+
-在读某大专，目标升本！
