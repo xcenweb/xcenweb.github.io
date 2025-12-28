@@ -1,30 +1,19 @@
-- 快速入门
-
-  - [安装](/?id=fr-install)
-  - [结构](/start/tree)
-  - [调试](/start/run)
-  - [流程](/start/process)
-  - [示例](/start/simple)
-
----
-
-- 框架模块
-
-  - [日志/Log](/model/log)
-  - [路由/Route](/model/route)
-  - [调试/Debug](/model/debug)
-  - [API操作/Api](/model/api)
-  - [数据库/db](/model/db)
-  - [中文编程/Cncode](/model/cncode)
-  - [助手函数/helper](/model/helper)
-
----
-
-- 工具类
-
-  - [数组/Arr](/tool/array)
-  - [字符串/Str](/tool/string)
-  - [过滤器/Filter](/tool/filter)
-  - [文件操作/File](/tool/file)
-  - [用户操作/User](/tool/user)
-  - [加解密/Encrypt](/tool/encrypt)
+- [接口说明](#接口说明)
+  - [接口URL](#接口url)
+  - [验证方式](#验证方式)
+  - [公共请求 headers 说明](#公共请求-headers-说明)
+  - [公共响应 headers 说明](#公共响应-headers-说明)
+  - [响应状态码 HTTP Status Code 说明](#响应状态码-http-status-code-说明)
+- [授权相关](#授权相关)
+  - [生成 Token](#生成-token)
+  - [清空 Token](#清空-token)
+  - [用户资料](#用户资料)
+- [策略相关](#策略相关)
+  - [策略列表](#策略列表)
+- [图片相关](#图片相关)
+  - [上传图片](#上传图片)
+  - [图片列表](#图片列表)
+  - [删除图片](#删除图片)
+- [相册相关](#相册相关)
+  - [相册列表](#相册列表)
+  - [删除相册](#删除相册)
